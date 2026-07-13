@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kennedy Iseh | WDD 231 Home</title>
+
+    <meta name="description" content="WDD 231 Home Page Assignment for Kennedy Iseh">
+    <meta name="author" content="Kennedy Iseh">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Kennedy Iseh</span>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is Kennedy Iseh, and I am from Nigeria. I am currently pursuing a degree in Web and Computer Programming through BYU-Idaho. I have a strong interest in technology and enjoy learning new programming languages, building websites, and solving problems through code. Outside of programming, I enjoy playing strategy games, listening to music, singing, and exploring new technologies that help improve my skills. I am passionate about creating responsive, user-friendly websites that provide a great experience across different devices. As I continue my studies, I hope to strengthen my knowledge of web development, software engineering, and modern programming practices. My long-term goal is to become a skilled software developer, contribute to meaningful projects, and build innovative applications that make a positive impact on people's lives.
+            </p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+
+            <img src="images/profile.png" alt="Photo of Kennedy Iseh">
+        </section>
+
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+
+            <div id="course-container"></div>
+
+            <p>
+                The total credits for courses listed above is
+                <span id="totalCredits"></span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://github.com/" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="22" height="22">
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
+            </a>
+
+            <a href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
+            </a>
+
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Kennedy Iseh | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
