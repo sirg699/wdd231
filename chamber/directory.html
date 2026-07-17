@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Directory | Port Harcourt Chamber of Commerce</title>
-  <meta name="description" content="Browse the member business directory of the Port Harcourt Chamber of Commerce, connecting local businesses and patrons across Port Harcourt, Rivers State.">
-  <meta name="author" content="Your Name">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+    <meta name="description" content="Browse the member business directory of the Port Harcourt Chamber of Commerce, connecting local businesses and patrons across Port Harcourt, Rivers State.">
+    <meta name="author" content="Your Name">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
-  <!-- Facebook / Open Graph meta -->
-  <meta property="og:title" content="Business Directory | Port Harcourt Chamber of Commerce">
-  <meta property="og:description" content="Browse the member business directory of the Port Harcourt Chamber of Commerce, connecting local businesses and patrons across Port Harcourt, Rivers State.">
-  <meta property="og:image" content="https://github.com/sirg699/wdd231.github.io/wdd231/chamber/images/favicon.svg">
-  <meta property="og:url" content="https://github.com/sirg699/wdd231.github.io/wdd231/chamber/directory.html">
+    <!-- Facebook / Open Graph meta -->
+    <meta property="og:title" content="Business Directory | Port Harcourt Chamber of Commerce">
+    <meta property="og:description" content="Browse the member business directory of the Port Harcourt Chamber of Commerce, connecting local businesses and patrons across Port Harcourt, Rivers State.">
+    <meta property="og:image" content="https://sirg699/wdd231.github.io/wdd231/chamber/images/favicon.svg">
+    <meta property="og:url" content="https://sirg699/wdd231.github.io/wdd231/chamber/directory.html">
 
-  <!-- CSS: normalize first, then mobile-first, then larger breakpoint -->
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS: normalize first, then mobile-first, then larger breakpoint -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-brand">
-      <img src="images/favicon.svg" alt="Port Harcourt Chamber of Commerce logo">
-      <span>Port Harcourt Chamber of Commerce</span>
-    </div>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" aria-current="page">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="header-brand">
+            <img src="images/favicon.svg" alt="Port Harcourt Chamber of Commerce logo">
+            <span>Port Harcourt Chamber of Commerce</span>
+        </div>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <h1>Business Directory</h1>
-    <p>Explore member businesses of the Port Harcourt Chamber of Commerce.</p>
+    <main>
+        <h1>Business Directory</h1>
+        <p>Explore member businesses of the Port Harcourt Chamber of Commerce.</p>
 
-    <div class="directory-header">
-      <p><strong id="member-count"></strong></p>
-      <div class="view-toggle">
-        <button id="grid-view-btn" class="active" aria-label="Grid view">Grid</button>
-        <button id="list-view-btn" aria-label="List view">List</button>
-      </div>
-    </div>
+        <div class="directory-header">
+            <p><strong id="member-count"></strong></p>
+            <div class="view-toggle">
+                <button id="grid-view-btn" class="active" aria-label="Grid view">Grid</button>
+                <button id="list-view-btn" aria-label="List view">List</button>
+            </div>
+        </div>
 
-    <section id="member-display" class="grid-view">
-      <!-- Member cards are injected here by js/directory.js -->
-    </section>
-  </main>
+        <section id="member-display" class="grid-view">
+            <!-- Member cards are injected here by js/directory.js -->
+        </section>
+    </main>
 
-  <footer>
-    <div class="footer-contact">
-      <p>Port Harcourt Chamber of Commerce</p>
-      <p>14 Aba Road, Port Harcourt, Rivers State</p>
-      <p>(084) 555-0100 | info@phchamber.example.com</p>
-    </div>
+    <footer>
+        <div class="footer-contact">
+            <p>Port Harcourt Chamber of Commerce</p>
+            <p>14 Aba Road, Port Harcourt, Rivers State</p>
+            <p>(084) 555-0100 | info@phchamber.example.com</p>
+        </div>
 
-    <div class="social">
+        <div class="social">
+            <a href="https://github.com/sirg699/wdd231" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="22" height="22">
+            </a>
+            <a href="https://linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
+            </a>
+        </div>
+        <p>Kennedy Iseh</p>
+        <p>WDD 231 Web Frontend Development</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 
-        <a href="https://github.com/sirg699/wdd231" target="_blank">
-            <img src="images/github.svg" alt="GitHub" width="22" height="22">
-        </a>
-
-        <a href="https://linkedin.com/" target="_blank">
-            <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
-        </a>
-
-        <a href="https://facebook.com/" target="_blank">
-            <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
-        </a>
-
-        <a href="https://x.com/" target="_blank">
-            <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
-        </a>
-
-    </div>
-
-    <p>Kennedy Iseh</p>
-    <p>WDD 231 Web Frontend Development</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-  </footer>
-
-  <script src="scripts/directory.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
