@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Niger Delta Oilfield Services",
+      "address": "14 Aba Road, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0111",
+      "website": "https://www.ndoilfieldservices.example.com",
+      "image": "images/niger-delta-oilfield-services.svg",
+      "membership": 3,
+      "industry": "Oil & Gas Services",
+      "founded": 2004,
+      "description": "Equipment maintenance and logistics support for oil and gas operators across the Niger Delta."
+    },
+    {
+      "name": "Harcourt Bites Restaurant",
+      "address": "22 Trans Amadi Road, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0122",
+      "website": "https://www.harcourtbites.example.com",
+      "image": "images/harcourt-bites-restaurant.svg",
+      "membership": 2,
+      "industry": "Food & Beverage",
+      "founded": 2015,
+      "description": "Family-owned restaurant serving traditional Rivers State cuisine and modern fusion dishes."
+    },
+    {
+      "name": "Rivers Tech Hub",
+      "address": "7 Woji Road, GRA Phase 2, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0133",
+      "website": "https://www.riverstechhub.example.com",
+      "image": "images/rivers-tech-hub.svg",
+      "membership": 3,
+      "industry": "Technology & Startups",
+      "founded": 2019,
+      "description": "Coworking space and startup incubator supporting early-stage tech companies in the region."
+    },
+    {
+      "name": "Garden City Fashion House",
+      "address": "5 Olu Obasanjo Road, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0144",
+      "website": "https://www.gardencityfashion.example.com",
+      "image": "images/garden-city-fashion-house.svg",
+      "membership": 1,
+      "industry": "Retail & Fashion",
+      "founded": 2011,
+      "description": "Boutique fashion label designing and tailoring contemporary Nigerian wear."
+    },
+    {
+      "name": "Waterside Logistics Ltd.",
+      "address": "31 Marine Base Road, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0155",
+      "website": "https://www.watersidelogistics.example.com",
+      "image": "images/waterside-logistics-ltd.svg",
+      "membership": 2,
+      "industry": "Shipping & Logistics",
+      "founded": 2008,
+      "description": "Port-side freight handling and haulage services connecting Port Harcourt to regional markets."
+    },
+    {
+      "name": "Aluu Craft Market",
+      "address": "12 Aluu Road, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0166",
+      "website": "https://www.aluucraftmarket.example.com",
+      "image": "images/aluu-craft-market.svg",
+      "membership": 1,
+      "industry": "Arts & Crafts",
+      "founded": 2017,
+      "description": "Cooperative marketplace showcasing handmade crafts, textiles, and artwork from local artisans."
+    },
+    {
+      "name": "Trans-Amadi Auto Parts",
+      "address": "48 Trans Amadi Industrial Layout, Port Harcourt, Rivers State",
+      "phone": "(084) 555-0177",
+      "website": "https://www.transamadiautoparts.example.com",
+      "image": "images/trans-amadi-auto-parts.svg",
+      "membership": 2,
+      "industry": "Automotive",
+      "founded": 2006,
+      "description": "Supplier of new and used auto parts serving mechanics and fleet operators across the city."
+    }
+  ]
+}

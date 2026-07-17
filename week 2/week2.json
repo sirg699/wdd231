@@ -1,0 +1,44 @@
+{
+    "family": "Iseh",
+    "move_in_date": "2022-06-01",
+    "number_of_members": 7,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Samuel Iseh",
+            "age": 55,
+            "relationship": "Father"
+        },
+        {
+            "name": "Angela Iseh",
+            "age": 52,
+            "relationship": "Mother"
+        },
+        {
+            "name": "Mirabel Iseh",
+            "age": 28,
+            "relationship": "Daughter"
+        },
+        {
+            "name": "Samuel Iseh Jnr",
+            "age": 26,
+            "relationship": "Son"
+        },
+        {
+            "name": "Kennedy Iseh",
+            "age": 24,
+            "relationship": "Son"
+        },
+        {
+            "name":"Jeffrey Iseh",
+            "age": 21,
+            "relationship": "Son"
+        },
+        {
+            "name":"Victor Iseh"
+            "age": 18,
+            "relationship": "Son"
+        }
+    ]
+
+}

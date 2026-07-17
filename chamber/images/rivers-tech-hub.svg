@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="12" fill="#173F5F"/>
+  <text x="60" y="70" font-family="Georgia, serif" font-size="34" font-weight="bold"
+        fill="#8FD9A8" text-anchor="middle">RTH</text>
+</svg>

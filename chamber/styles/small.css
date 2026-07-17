@@ -1,0 +1,256 @@
+/* ===========================
+   Port Harcourt Chamber of Commerce
+   Base (mobile-first) styles
+   =========================== */
+
+:root {
+  --primary-color: #0B5D3B;      /* deep green */
+  --secondary-color: #F2A900;    /* gold */
+  --background-color: #F7F5EF;   /* warm off-white */
+  --surface-color: #FFFFFF;
+  --text-color: #222222;
+  --muted-text: #5A5A5A;
+  --header-text: #FFFFFF;
+  --border-color: #DDD6C4;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Base ---------- */
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-width: 320px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  color: var(--header-text);
+  padding: 0.75rem 1rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header-brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-brand span {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--header-text);
+}
+
+.nav-toggle {
+  background: none;
+  border: 2px solid var(--header-text);
+  color: var(--header-text);
+  font-size: 1.1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  width: 100%;
+  background-color: var(--primary-color);
+  order: 3;
+}
+
+.navigation ul {
+  
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  list-style-type: none;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--header-text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+nav a:hover, nav a:focus, nav a[aria-current="page"] {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- Main content ---------- */
+main {
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---------- Directory controls ---------- */
+.directory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.view-toggle button {
+  background-color: var(--surface-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.4rem 0.7rem;
+  margin-left: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background-color: var(--primary-color);
+  color: var(--header-text);
+}
+
+/* ---------- Member cards: grid & list ---------- */
+#member-display {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#member-display.list-view {
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list-view .member-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.member-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.member-card p {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+
+.membership-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.badge-1 { background-color: #8A8A8A; }   /* member */
+.badge-2 { background-color: #9AA5B1; }   /* silver */
+.badge-3 { background-color: var(--secondary-color); color: var(--primary-color); }
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--primary-color);
+  color: var(--header-text);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+footer .footer-contact {
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin: 0.2rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: .8rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #ccc solid 1px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #E07A5F;
+}

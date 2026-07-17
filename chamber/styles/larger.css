@@ -1,0 +1,40 @@
+/* ===========================
+   Port Harcourt Chamber of Commerce
+   Larger viewport overrides (640px+)
+   =========================== */
+
+@media (min-width: 640px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    order: 2;
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    border-top: none;
+  }
+
+  nav a {
+    border-bottom: none;
+    padding: 0.5rem 0.9rem;
+  }
+
+  #member-display.grid-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #member-display.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
