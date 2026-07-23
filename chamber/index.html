@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Port Harcourt Chamber of Commerce</title>
+  <meta name="description" content="Home of the Port Harcourt Chamber of Commerce - connecting local businesses, hosting events, and growing the Port Harcourt, Rivers State community.">
+  <meta name="author" content="Kennedy Iseh">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Facebook / Open Graph meta -->
+  <meta property="og:title" content="Port Harcourt Chamber of Commerce">
+  <meta property="og:description" content="Connecting local businesses, hosting events, and growing the Port Harcourt, Rivers State community.">
+  <meta property="og:image" content="https://sirg699.github.io/wdd231/chamber/images/favicon.svg">
+  <meta property="og:url" content="https://sirg699.github.io/wdd231/chamber/index.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.svg" alt="Port Harcourt Chamber of Commerce logo">
+      <span>Port Harcourt Chamber of Commerce</span>
+    </div>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">&#9776;</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="images/hero-port-harcourt.svg" alt="Stylized skyline of Port Harcourt at sunset">
+      <div class="hero-content">
+        <h1>Growing Port Harcourt Business, Together</h1>
+        <p>Connecting local businesses, patrons, and the community since 1998.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <!-- Current events -->
+    <section class="home-section">
+      <h2>Current Events</h2>
+      <div class="events-list">
+        <article class="event-card">
+          <p class="event-date">August 5, 2026</p>
+          <p><strong>Small Business Networking Breakfast</strong> - Rivers Tech Hub, 8:00 AM</p>
+        </article>
+        <article class="event-card">
+          <p class="event-date">August 14, 2026</p>
+          <p><strong>Ribbon Cutting: Garden City Fashion House Expansion</strong> - 5 Olu Obasanjo Road, 11:00 AM</p>
+        </article>
+        <article class="event-card">
+          <p class="event-date">August 22, 2026</p>
+          <p><strong>Chamber Members Trade Expo</strong> - Port Harcourt Waterfront, 9:00 AM - 4:00 PM</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Weather + Spotlights -->
+    <div class="home-columns">
+      <section id="weather-section" class="home-section" aria-label="Local weather">
+        <h2>Port Harcourt Weather</h2>
+        <div class="current-weather">
+          <img id="current-icon" src="" alt="">
+          <div>
+            <p id="current-temp"></p>
+            <p id="current-description"></p>
+          </div>
+        </div>
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+      </section>
+
+      <section class="home-section" aria-label="Member spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlights"></div>
+      </section>
+    </div>
+
+  </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p>Port Harcourt Chamber of Commerce</p>
+            <p>14 Aba Road, Port Harcourt, Rivers State</p>
+            <p>(084) 555-0100 | info@phchamber.example.com</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/sirg699/wdd231" target="_blank">
+                <img src="images/github.svg" alt="GitHub" width="22" height="22">
+            </a>
+            <a href="https://linkedin.com/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
+            </a>
+            <a href="https://facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
+            </a>
+        </div>
+        <p>Kennedy Iseh</p>
+        <p>WDD 231 Web Frontend Development I</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+     </footer>
+
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlights.js"></script>
+  <script>
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector("nav ul");
+    navToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", navMenu.classList.contains("open"));
+    });
+    document.querySelector("#lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

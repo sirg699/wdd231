@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B5D3B"/>
+      <stop offset="55%" stop-color="#12805A"/>
+      <stop offset="100%" stop-color="#F2A900"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A4A30"/>
+      <stop offset="100%" stop-color="#073822"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="960" cy="180" r="70" fill="#FFD873" opacity="0.85"/>
+
+  <!-- skyline silhouette -->
+  <g fill="#07301F">
+    <rect x="40"  y="260" width="70"  height="180"/>
+    <rect x="120" y="220" width="55"  height="220"/>
+    <rect x="185" y="280" width="60"  height="160"/>
+    <rect x="255" y="190" width="50"  height="250"/>
+    <rect x="315" y="240" width="80"  height="200"/>
+    <rect x="405" y="150" width="45"  height="290"/>
+    <rect x="460" y="260" width="65"  height="180"/>
+    <rect x="535" y="210" width="55"  height="230"/>
+    <rect x="600" y="270" width="70"  height="170"/>
+    <rect x="680" y="180" width="50"  height="260"/>
+    <rect x="740" y="230" width="60"  height="210"/>
+    <rect x="810" y="255" width="75"  height="185"/>
+    <rect x="895" y="200" width="50"  height="240"/>
+    <rect x="955" y="270" width="65"  height="170"/>
+    <rect x="1030" y="230" width="55" height="210"/>
+    <rect x="1095" y="255" width="70" height="185"/>
+  </g>
+
+  <!-- windows -->
+  <g fill="#F2A900" opacity="0.55">
+    <rect x="55"  y="280" width="8" height="10"/>
+    <rect x="55"  y="310" width="8" height="10"/>
+    <rect x="135" y="245" width="8" height="10"/>
+    <rect x="135" y="280" width="8" height="10"/>
+    <rect x="270" y="215" width="8" height="10"/>
+    <rect x="270" y="250" width="8" height="10"/>
+    <rect x="420" y="180" width="8" height="10"/>
+    <rect x="420" y="215" width="8" height="10"/>
+    <rect x="700" y="210" width="8" height="10"/>
+    <rect x="700" y="245" width="8" height="10"/>
+    <rect x="910" y="230" width="8" height="10"/>
+    <rect x="910" y="265" width="8" height="10"/>
+    <rect x="1045" y="255" width="8" height="10"/>
+    <rect x="1045" y="290" width="8" height="10"/>
+  </g>
+
+  <!-- waterfront -->
+  <rect x="0" y="440" width="1200" height="60" fill="url(#water)"/>
+  <rect x="0" y="440" width="1200" height="4" fill="#F2A900" opacity="0.5"/>
+</svg>

@@ -26,10 +26,34 @@
   #member-display.grid-view {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* ---------- Home page layout ---------- */
+  .hero img {
+    height: 380px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  #spotlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
   #member-display.grid-view {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #spotlights {
     grid-template-columns: repeat(3, 1fr);
   }
 }
