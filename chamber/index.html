@@ -16,13 +16,17 @@
   <meta property="og:image" content="https://sirg699.github.io/wdd231/chamber/images/favicon.svg">
   <meta property="og:url" content="https://sirg699.github.io/wdd231/chamber/index.html">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlights.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
 
@@ -78,7 +82,7 @@
       <section id="weather-section" class="home-section" aria-label="Local weather">
         <h2>Port Harcourt Weather</h2>
         <div class="current-weather">
-          <img id="current-icon" src="" alt="">
+          <img id="current-icon" src="" alt="current icon">
           <div>
             <p id="current-temp"></p>
             <p id="current-description"></p>
@@ -96,42 +100,30 @@
 
   </main>
 
-    <footer>
-        <div class="footer-contact">
-            <p>Port Harcourt Chamber of Commerce</p>
-            <p>14 Aba Road, Port Harcourt, Rivers State</p>
-            <p>(084) 555-0100 | info@phchamber.example.com</p>
-        </div>
-        <div class="social">
-            <a href="https://github.com/sirg699/wdd231" target="_blank">
-                <img src="images/github.svg" alt="GitHub" width="22" height="22">
-            </a>
-            <a href="https://linkedin.com/" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
-            </a>
-            <a href="https://facebook.com/" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
-            </a>
-            <a href="https://x.com/" target="_blank">
-                <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
-            </a>
-        </div>
-        <p>Kennedy Iseh</p>
-        <p>WDD 231 Web Frontend Development I</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
-     </footer>
+  <footer>
+    <div class="footer-contact">
+      <p>Port Harcourt Chamber of Commerce</p>
+      <p>14 Aba Road, Port Harcourt, Rivers State</p>
+      <p>(084) 555-0100 | info@phchamber.example.com</p>
+    </div>
+    <div class="social">
+      <a href="https://github.com/sirg699/wdd231" target="_blank">
+        <img src="images/github.svg" alt="GitHub" width="22" height="22">
+      </a>
+      <a href="https://linkedin.com/" target="_blank">
+        <img src="images/linkedin.svg" alt="LinkedIn" width="22" height="22">
+      </a>
+      <a href="https://facebook.com/" target="_blank">
+        <img src="images/facebook.svg" alt="Facebook" width="22" height="22">
+      </a>
+      <a href="https://x.com/" target="_blank">
+        <img src="images/twitter-x.svg" alt="Twitter X" width="22" height="22">
+      </a>
+    </div>
+    <p>Kennedy Iseh</p>
+    <p>WDD 231 Web Frontend Development I</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 
-  <script src="scripts/weather.js"></script>
-  <script src="scripts/spotlights.js"></script>
-  <script>
-
-    const navToggle = document.querySelector(".nav-toggle");
-    const navMenu = document.querySelector("nav ul");
-    navToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-      navToggle.setAttribute("aria-expanded", navMenu.classList.contains("open"));
-    });
-    document.querySelector("#lastModified").textContent = document.lastModified;
-  </script>
 </body>
 </html>
